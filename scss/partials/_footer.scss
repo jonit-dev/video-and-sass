@@ -1,0 +1,19 @@
+
+/*FOOTER*/
+
+.footer-wrapper {
+  max-width: 1000px;
+  margin:auto;
+}
+
+footer {
+  color:white;
+  background-color: $secondary_color;
+  min-height: 100px;
+  padding:1rem;
+}
+
+footer a {
+  text-decoration:none;
+  color: $primary_color;
+}

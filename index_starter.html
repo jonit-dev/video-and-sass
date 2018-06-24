@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6 </title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+<body>
+
+<header>
+
+    <div class="branding">WMDD 4835</div>
+
+    <h1>HTML/CSS <br> Assignment</h1>
+
+    <div class="subtitle">Video, Audio, Sass and Fallbacks</div>
+
+    <!-- Video tag goes here -->
+    <video autoplay muted loop poster="media/guitarist.jpg" class="desktop-only">
+        <source src="media/Guitarist.mp4" type="video/mp4">
+        <!--Use additional source tags to provide additional formats-->
+
+
+        <img src="media/guitarist.jpg" alt="description"> <!-- This will take over if poster is not supported -->
+
+    </video>
+
+    <nav>
+
+        <div class="menu-btn">
+            <div class="menu-btn-tag">Menu</div>
+            <i class="fas fa-bars menu-btn-icon"></i>
+        </div>
+
+
+        <ul class="closed-menu">
+            <li><a href="#">Jazz</a></li>
+            <li><a href="#">Rock</a></li>
+            <li><a href="#">Hip Hop</a></li>
+            <li><a href="#">Electronic</a></li>
+            <li><a href="#">Classical</a></li>
+        </ul>
+
+    </nav>
+
+</header>
+
+<main>
+
+    <article>
+
+        <div class="image-container">
+
+            <!-- Image goes here, with attribution if necessary. Try to use an image that is not a perfect square, so that we can test the @supports rule with the object-fit property. -->
+            <img src="media/singers/json-aldean.jpg" class="singer-img" alt="Jason Aldean">
+
+
+            <div class="attribution">
+                <a target="blank"
+                   href="https://www.flickr.com/photos/morgancwilliams1/13097049775/in/photolist-kXkNB2-do1jGB-do1qjA-do1qd7-do1jHH-8LbAdx-8LbAaP-e81Dx8-e86YhL-e81D9i-e87oqY-e81C5K-e86WG1-kXmphH-kXkQev-kXkQ7X-kXkRk8-kXmqxP-kXnivb-e81Cxk-6w8WRJ-6w4Tog-6w8WvE-aibPv9-aibPxU-ai91Zz-aibPw5-kVs8TC-kVouy4-kVs3sN-kVq5w1-kVs5Jm-kVqtwF-kVq6F5-kVr4NK-kVqwaB-kVs5k5-dwEZCs-dwztLT-dwEZfQ-dwF1n1-dwzuuv-dwEYVJ-dwEZZu-dwEYKU-kVr2JK-kVr2Xk-kVqVuR-kVr3AV-kVqmMt">
+                    By <b>Morgan Williams</b> - CC 2.0 Genereric
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="singer-info-wrapper">
+
+            <div class="singer-title">
+                Jason Aldean
+            </div>
+
+            <div class="singer-description">
+                Jason Aldine Williams known professionally as Jason Aldean, is an
+                American country music singer. Since 2005, Jason Aldean has been signed to Broken Bow Records, a
+                record
+                label for which he has released eight albums and 24 singles.
+                From <span class="singer-reference-link"><a href="https://en.wikipedia.org/wiki/Jason_Aldean"
+                                                            target="_blank">Wikipedia</a></span>
+            </div>
+
+
+        </div>
+
+        <div class="singer-embedded-sound">
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/138973275&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        </div>
+
+
+    </article>
+
+
+    <article>
+
+        <div class="image-container">
+
+            <!-- Image goes here, with attribution if necessary. Try to use an image that is not a perfect square, so that we can test the @supports rule with the object-fit property. -->
+            <img src="media/singers/shawn_mendes.jpg" class="singer-img" alt="Jason Aldean">
+
+
+            <div class="attribution">
+                <a target="blank"
+                   href="https://www.flickr.com/photos/raph_ph/26886316477/in/photolist-GXRpbD-LEnNna-AudF96-23RWWxA-GXRsBM-Ju8t9j-GXRpUx-GXRrQg-Ju86jY-25fffei-GXR5oZ-26y56K5-GXR196-26y4GtA-26y4x8b-25whLif-26y4RHs-26BHS3F-26y4Wpb-25ffHVk-Ju8pw9-23RXk3L-Ju82k5-25ffQCZ-23RX61C-25whXM7-25who9q-Ju8vSq-Ju7Aow-Ju81sU-Ju87JS-25whFtW-23RWVBs-25fftKM-GXR7ya-Ju86Z5-Ju84c1-Ju855U-Ju84E5-25ffPkt-Ju7M9u-23RX2v1-26y4uTb-25ffaz8-26y4EZd-26BHVQR-GXQUfn-HW1iAB-23RXabm-25ffFiM">
+                    By <b>Raph_PH</b> - CC 2.0 Genereric
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="singer-info-wrapper">
+
+            <div class="singer-title">
+                Shawn Mendes
+            </div>
+
+            <div class="singer-description">
+                Shawn Peter Raul Mendes is a Canadian
+                singer and songwriter. He gained a following in 2013, posting song covers on the video-sharing
+                application Youtube. The following year, he caught the attention of artist manager Andrew Gertler and
+                Island Records A&R Ziggy Chareton, which led to him signing a deal with the record label.
+                <span class="singer-reference-link"><a href="https://en.wikipedia.org/wiki/Shawn_Mendes"
+                                                       target="_blank">Wikipedia</a></span>
+            </div>
+
+
+        </div>
+
+        <div class="singer-embedded-sound">
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/304376276&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        </div>
+
+
+    </article>
+
+
+    <!-- Use the above format to feature one or two more artists. -->
+
+</main>
+
+<footer>
+    <div class="footer-wrapper">
+        <p>&copy; 2018 WMDD 4835</p>
+
+        <p><a href="#">Contact us</a></p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

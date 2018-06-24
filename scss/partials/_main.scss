@@ -1,0 +1,126 @@
+/*MAIN*/
+
+main {
+  max-width: 1000px;
+  margin: auto;
+
+  img {
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
+
+article {
+
+  padding: .5rem;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, .5);
+  border-radius: 5px;
+  margin: 2rem 0;
+  border-left: 30px solid $primary-color;
+  border-radius: 0 5px 5px 0;
+
+}
+
+.image-container {
+  position: relative;
+  margin-top:1rem;
+}
+
+.singer-img {
+
+  max-width: 100%;
+
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.attribution {
+  font-size: .5rem;
+
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+
+  color: white;
+  text-shadow: 1px 1px 0 black;
+  padding: 4px;
+
+}
+
+.singer-title {
+  color: $primary_color;
+  font-size: 3rem;
+  font-weight: bolder;
+  width: 50%;
+  line-height: 1;
+  padding-bottom: 1.3rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.singer-embedded-sound {
+  padding: .5rem;
+}
+
+.singer-description {
+  padding-left: .5rem;
+  padding-right: .5rem;
+  padding-bottom:.5rem;
+}
+
+.singer-reference-link a {
+  text-decoration: none;
+  color: $primary_color;
+}
+
+/*DESKTOP ONLY CODE*/
+
+@media screen and (min-width: 700px) {
+
+ article {
+ display:grid;
+ grid-template: auto auto / repeat(3,1fr);
+ grid-template-areas:
+     "i d d"
+     "s s s"
+ }
+
+  .image-container {
+    grid-area: i;
+    margin-top: 0;
+  }
+  .singer-img {
+    height: 250px;
+  }
+  .singer-info-wrapper {
+    grid-area: d;
+  }
+  .singer-embedded-sound {
+    grid-area: s;
+  }
+
+  .attribution {
+    position: absolute;
+    top: 14.1rem !important;
+    left: 0.4rem;
+  }
+
+}
+
+
+.attribution {
+  position: absolute;
+  top: 11.1rem;
+  left: 0.4rem;
+}
+.attribution a {
+  text-decoration: none;
+  color:white;
+  font-size:0.7rem;
+}
+.attribution b {
+  color: $tertiary_color;
+}

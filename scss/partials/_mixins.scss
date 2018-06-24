@@ -1,0 +1,29 @@
+
+/*ANCHOR HOVER UNDERLINE (use with mixin)*/
+
+/*
+position:relative;
+z-index: 1;
+
+color:$primary-color;
+text-decoration:none;
+
+
+&:hover {
+
+	&:after {
+
+	content:"";
+	display: block;
+	height:.7em;
+	background-color:$tertiary-color;
+	position:absolute;
+	bottom:-.2em;
+	left:0;
+	width:100%;
+	z-index: -1;
+
+
+	}
+
+}*/
