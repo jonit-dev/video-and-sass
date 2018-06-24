@@ -620,16 +620,44 @@ nav:hover {
   color: #50326e;
 }
 
+nav:hover .closed-menu {
+  display: flex;
+  left: 0;
+  opacity: 1;
+}
+
+.closed-menu {
+  display: flex;
+  transition-property: left, opacity;
+  transition-duration: .5s;
+  transition-timing-function: ease-in;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: -20rem;
+  position: absolute;
+  width: 20rem;
+  height: 100vh;
+  background-color: #ff7f50;
+}
+
+.closed-menu li, .closed-menu li a {
+  flex: 1 1 100%;
+}
+
+.closed-menu li a {
+  text-decoration: none;
+  text-align: right;
+  color: #50326e;
+}
+
 /*DESKTOP ONLY CODE*/
 @media screen and (min-width: 700px) {
   nav {
     border: solid 1px #ff7f50;
   }
 }
-.closed-menu {
-  display: none;
-}
-
 .menu-btn {
   display: block;
   font-size: 2rem;
