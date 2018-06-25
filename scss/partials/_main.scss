@@ -50,6 +50,10 @@ article {
 
 }
 
+main {
+  @include setMaxWidthandCenter(1000px);
+}
+
 .singer-title {
   color: $primary_color;
   font-size: 3rem;

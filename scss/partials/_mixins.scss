@@ -1,6 +1,23 @@
 
 /*ANCHOR HOVER UNDERLINE (use with mixin)*/
 
+@mixin setPosition($type,$top,$left: 0) {
+  position: $type;
+  top: $top;
+  left: $left;
+}
+
+@mixin setMaxWidthandCenter($max_width) {
+  max-width: $max_width;
+  margin: 0 auto;
+}
+
+@mixin setGreenHover(){
+  border-bottom: solid 1rem $tertiary_color;
+  width: 100%;
+}
+
+
 /*
 position:relative;
 z-index: 1;
